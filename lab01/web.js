@@ -9,6 +9,7 @@ const port = 3000;
 //4. tạo server
 const server = http.createServer((request,respond)=>{
     respond.write("<h1>This is NodeJS web server</h1>")
+    respond.end();
 })
 //5. Chạy server bằng cách Listen port
 server.listen(port);
